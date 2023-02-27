@@ -51,6 +51,10 @@ nextButton.addEventListener('click',function(){
             itemsCollection[active].classList.remove('show');
             active++;
             itemsCollection[active].classList.add('show');
+        } else {
+            itemsCollection[active].classList.remove('show');
+            active = 0;
+            itemsCollection[active].classList.add('show');
         }
 
 });
@@ -63,6 +67,9 @@ prevButton.addEventListener('click',function(){
             itemsCollection[active].classList.remove('show');
             active--;
             itemsCollection[active].classList.add('show');
+        } else {
+            itemsCollection[active].classList.remove('show');
+            active = (itemsCollection.length - 1);
+            itemsCollection[active].classList.add('show');
         }
-
 });
