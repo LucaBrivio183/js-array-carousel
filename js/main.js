@@ -57,4 +57,12 @@ nextButton.addEventListener('click',function(){
 
 //define click event of prev button
 
+prevButton.addEventListener('click',function(){
+    
+    if (active > 0){
+            itemsCollection[active].classList.remove('show');
+            active--;
+            itemsCollection[active].classList.add('show');
+        }
 
+});
