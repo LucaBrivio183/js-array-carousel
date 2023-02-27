@@ -15,3 +15,51 @@ COMMON
 body {
     background-color: pink;
 }
+
+.container {
+    margin: 25vh auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    height: 50vh;
+    width: 60vw;
+    position: relative;
+    background-color: blue;
+}
+
+.next, .prev {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2vw;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 2.5vw;
+    height: 2.5vw;
+    z-index: 999;
+    text-align: center;
+    line-height: 2.5vw;
+}
+
+.next {
+    bottom: 10px;
+}
+
+.prev {
+    top: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
