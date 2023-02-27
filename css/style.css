@@ -12,9 +12,6 @@ COMMON
 
 ****************/
 
-body {
-    background-color: pink;
-}
 
 .container {
     margin: 25vh auto;
@@ -27,7 +24,7 @@ body {
     height: 50vh;
     width: 60vw;
     position: relative;
-    background-color: blue;
+
 }
 
 .next, .prev {
